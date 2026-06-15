@@ -1,5 +1,3 @@
-/* CashFree — interações em JS puro (sem framework).
-   Todo o estado vive em variáveis locais; dados vêm de data.js (CASHFREE_DATA). */
 (function () {
   'use strict';
 
