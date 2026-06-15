@@ -473,5 +473,18 @@
     <script src="js/data.js"></script>
     <script src="js/toast.js"></script>
     <script src="js/app.js"></script>
-  </body>
+  
+<script>
+document.addEventListener("submit", function(e){
+  if(e.target.matches("#loginForm, #registerForm")){
+    e.preventDefault();
+    const name = e.target.querySelector("input[name='name']")?.value || "";
+    const email = e.target.querySelector("input[name='email']")?.value || "";
+    localStorage.setItem("cf_user", JSON.stringify({name, email}));
+    window.location.href = "dashboard.html";
+  }
+});
+</script>
+</body>
+
 </html>
