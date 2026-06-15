@@ -355,12 +355,23 @@ svg {
    box-shadow: var(--shadow-soft);
 }
 
-.nav {
-   height: var(--header-h);
+.nav__mobile {
    display: flex;
-   align-items: center;
-   justify-content: space-between;
-   gap: 16px;
+   flex-direction: column;
+   gap: 4px;
+   padding: 12px 20px 20px;
+   background: #fff;
+   border-top: 1px solid var(--ink-100);
+}
+
+.nav__mobile[hidden] {
+   display: none !important;
+}
+
+@media (min-width: 1025px) {
+   .nav__mobile {
+      display: none !important;
+   }
 }
 
 .logo {
