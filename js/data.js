@@ -182,8 +182,6 @@ const CASHFREE_DATA = {
         ],
       },
     ],
-    // Cada item de "values" segue a ordem dos planos acima (Free, Economiza, Economiza+).
-    // true/false => ✓ / ✕  |  string => texto exibido na célula
     benefits: [
       { label: 'Cupons de lojas parceiras', values: ['Básicos', 'Exclusivos', 'Exclusivos Premium'] },
       { label: 'Quantidade de cupons disponíveis', values: ['Limitada', 'Ampliada', 'Ilimitada'] },
